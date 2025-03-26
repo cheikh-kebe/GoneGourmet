@@ -9,7 +9,7 @@ Application de gestion de recettes avec un backend Spring Boot et un frontend Re
 ### 1. Structure initiale du projet [ ]
 
 - [x] Création des dossiers backend et frontend
-- [ ] Initialisation du projet Spring Boot
+- [x] Initialisation du projet Spring Boot
 - [ ] Initialisation du projet React avec Vite
 - [ ] Configuration des dépendances de base
 
