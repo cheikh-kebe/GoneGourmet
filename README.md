@@ -10,8 +10,8 @@ Application de gestion de recettes avec un backend Spring Boot et un frontend Re
 
 - [x] Création des dossiers backend et frontend
 - [x] Initialisation du projet Spring Boot
-- [ ] Initialisation du projet React avec Vite
-- [ ] Configuration des dépendances de base
+- [x] Initialisation du projet React avec Vite
+- [x] Configuration des dépendances de base
 
 ### 2. Backend (Spring Boot) [ ]
 
