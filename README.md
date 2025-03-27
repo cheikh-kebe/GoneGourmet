@@ -1,75 +1,93 @@
-# GoneGourmet - Application Full Stack
+# GoneGourmet
 
-## Description
+Application de gestion de recettes de cuisine.
 
-Application de gestion de recettes avec un backend Spring Boot et un frontend React.
+## Structure du Projet
 
-## Plan d'implémentation
+- `backend/` : API Spring Boot
+- `frontend/` : Application React/TypeScript avec Vite
 
-### 1. Structure initiale du projet [ ]
+## Étapes Réalisées
 
-- [x] Création des dossiers backend et frontend
-- [x] Initialisation du projet Spring Boot
-- [x] Initialisation du projet React avec Vite
-- [x] Configuration des dépendances de base
+1. Configuration Initiale ✓
 
-### 2. Backend (Spring Boot) [ ]
+   - Création de la structure du projet
+   - Configuration Git et GitHub
+   - Mise en place des fichiers .gitignore
 
-- [ ] Configuration du projet Spring Boot avec les dépendances nécessaires
-  - Spring Web
-  - Spring Data JPA
-  - MySQL Driver
-  - Spring Security
-- [ ] Configuration de la base de données
-- [ ] Mise en place de la structure MVC
-- [ ] Création des premiers endpoints REST
-- [ ] Configuration de la sécurité
+2. Configuration Backend ✓
 
-### 3. Frontend (React) [ ]
+   - Configuration des variables d'environnement
+   - Structure MVC (Models, Views, Controllers)
+   - Configuration de Spring Security de base
 
-- [ ] Configuration du projet React
-- [ ] Installation des dépendances (axios, react-router, etc.)
-- [ ] Mise en place de la structure des composants
-- [ ] Configuration du système de routage
-- [ ] Mise en place du state management
+3. Base de Données H2 ✓
+   - Migration vers H2 pour le développement ✓
+   - Configuration de la base de données en mémoire ✓
+   - Mise en place des scripts SQL d'initialisation ✓
+     - schema.sql pour la structure
+     - data.sql pour les données de test
+   - Configuration de la console H2 ✓
+   - Implémentation de l'entité User avec timestamps ✓
 
-### 4. Intégration Frontend/Backend [ ]
+## Configuration H2 ✓
 
-- [ ] Configuration CORS
-- [ ] Mise en place des appels API
-- [ ] Tests d'intégration
+### Accès à la Console H2
 
-### 5. Fonctionnalités [ ]
+- URL : http://localhost:8080/h2-console
+- JDBC URL : jdbc:h2:mem:gonegourmetdb
+- Utilisateur : sa
+- Mot de passe : (vide)
 
-- [ ] Implémentation du CRUD
-- [ ] Système d'authentification
-- [ ] Validation des données
-- [ ] Tests unitaires
+### Structure de la Base de Données
 
-### 6. Finalisation [ ]
+- Table `users` :
+  - id (BIGINT, Auto-increment)
+  - username (VARCHAR, Unique)
+  - email (VARCHAR, Unique)
+  - password (VARCHAR)
+  - created_at (TIMESTAMP)
+  - updated_at (TIMESTAMP)
 
-- [ ] Configuration des environnements (dev/prod)
-- [ ] Documentation
-- [ ] Déploiement
+## Prochaines Étapes
 
-## Comment lancer le projet
+1. Connection Frontend-Backend [ ]
+
+   - Configuration CORS
+   - Mise en place des services API
+   - Tests de connexion
+
+2. Implémentation des Fonctionnalités [ ]
+   - Authentification avec JWT
+   - CRUD des recettes
+   - Gestion des ingrédients
+
+## Commandes Utiles
 
 ### Backend
 
 ```bash
-cd backend
-./mvnw spring-boot:run
+# Lancer le backend
+mvn spring-boot:run
 ```
 
 ### Frontend
 
 ```bash
-cd frontend
+# Installation des dépendances
 npm install
+
+# Lancer le frontend en développement
 npm run dev
 ```
 
-## État d'avancement
+## Variables d'Environnement
 
-- ✓ = Terminé
-- [ ] = À faire
+### Backend (.env)
+
+- Profil actif : dev
+- Configuration H2 dans application-dev.properties
+
+### Frontend (.env)
+
+- VITE_API_URL=http://localhost:8080/api
