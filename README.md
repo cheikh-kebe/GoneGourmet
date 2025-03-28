@@ -1,7 +1,5 @@
 # GoneGourmet - Application Full Stack
 
-https://img.shields.io/coderabbit/prs/github/cheikh-kebe/GoneGourmet?utm_source=oss&utm_medium=github&utm_campaign=cheikh-kebe%2FGoneGourmet&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews
-
 ## Description
 
 Application de gestion de recettes avec un backend Spring Boot et un frontend React.
