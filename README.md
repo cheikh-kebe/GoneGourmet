@@ -50,6 +50,17 @@ Application de gestion de recettes de cuisine.
   - password (VARCHAR)
   - created_at (TIMESTAMP)
   - updated_at (TIMESTAMP)
+## Configuration Base de Données
+
+### Initialisation des données de test
+1. Naviguez vers `backend/src/main/resources/`
+2. Copiez `data.sql.example` vers `data.sql`
+3. Modifiez les valeurs dans `data.sql` selon vos besoins
+
+### Fichiers SQL
+- `schema.sql` : Structure de la base de données (versionné)
+- `data.sql` : Données de test (non versionné)
+
 
 ## Prochaines Étapes
 

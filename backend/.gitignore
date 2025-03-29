@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Fichiers SQL sensibles
+src/main/resources/data.sql
+src/main/resources/schema.sql
 ### Variables d'environnement ###
 .env
 .env.*
