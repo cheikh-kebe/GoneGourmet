@@ -2,11 +2,11 @@
 
 ## Description
 
-Application de gestion de recettes avec un backend Spring Boot et un frontend React.
+GoneGourmet est une application de gestion de recettes avec un backend développé en Spring Boot et un frontend en React. Cette application permet aux utilisateurs de créer, consulter, modifier et supprimer des recettes culinaires.
 
 ## Plan d'implémentation
 
-### 1. Structure initiale du projet [ ]
+### 1. Structure initiale du projet [✓]
 
 - [x] Création des dossiers backend et frontend
 - [x] Initialisation du projet Spring Boot
@@ -41,35 +41,44 @@ Application de gestion de recettes avec un backend Spring Boot et un frontend Re
 
 ### 5. Fonctionnalités [ ]
 
-- [ ] Implémentation du CRUD
-- [ ] Système d'authentification
+- [ ] Implémentation du CRUD pour les recettes
+- [ ] Système d'authentification des utilisateurs
 - [ ] Validation des données
 - [ ] Tests unitaires
+- [ ] Fonctionnalités de recherche et filtrage des recettes
+- [ ] Gestion des catégories de recettes
 
 ### 6. Finalisation [ ]
 
 - [ ] Configuration des environnements (dev/prod)
 - [ ] Documentation
-- [ ] Déploiement
+- [ ] Déploiement sur un serveur
+
+## Technologies utilisées
+
+### Backend
+- Java 17
+- Spring Boot
+- Spring Data JPA
+- Spring Security
+- MySQL
+
+### Frontend
+- React
+- TypeScript
+- Vite
+- Axios
+- React Router
 
 ## Comment lancer le projet
+
+### Prérequis
+- Java JDK 17 ou supérieur
+- Node.js et npm
+- MySQL
 
 ### Backend
 
 ```bash
 cd backend
 ./mvnw spring-boot:run
-```
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-## État d'avancement
-
-- ✓ = Terminé
-- [ ] = À faire
